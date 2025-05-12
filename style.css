@@ -143,6 +143,12 @@ footer {
   background-color: #f7e7ce;
 }
 
+.gallery-card:nth-child(odd) {
+  background: linear-gradient(to right, #fceabb, #f8b500);
+}
+.gallery-card:nth-child(even) {
+  background: linear-gradient(to right, #f8e0c4, #d3b49f);
+}
 
  
  

@@ -1,19 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | The Baker's Craft</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Gallery | Sweet Delights</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff8f3;
+    }
+
+    header, footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .gallery-container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .gallery-container h2 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      padding: 0 1rem;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="logo">The Baker's Craft</div>
+    <h1>Sweet Delights</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="products.html">Product</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="feedback.html">Feedback</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -21,28 +97,36 @@
     </nav>
   </header>
 
-  <main>
-    <section class="gallery">
-  <div class="gallery-card">
-    <h3>🎂 Chocolate Cake</h3>
-    <p>Rich and moist layered chocolate cake with ganache.</p>
-  </div>
-  <div class="gallery-card">
-    <h3>🧁 Vanilla Cupcake</h3>
-    <p>Fluffy vanilla cupcake topped with creamy frosting.</p>
-  </div>
-  <div class="gallery-card">
-    <h3>🍰 Red Velvet Slice</h3>
-    <p>Classic red velvet with cream cheese frosting.</p>
-  </div>
-  <div class="gallery-card">
-    <h3>🥧 Apple Pie</h3>
-    <p>Golden crust pie filled with spiced apple slices.</p>
-  </div>
-</section>
+  <main class="gallery-container">
+    <h2>Delicious Donuts & Cakes</h2>
+    <p>Browse our handcrafted sweets made with love and sugar ✨</p>
 
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1601979031925-91763ee3e4f2?auto=format&fit=crop&w=800&q=80" alt="Pink Frosted Donuts">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1590080874543-092b7f08e201?auto=format&fit=crop&w=800&q=80" alt="Rainbow Donuts">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1625473254384-f58cb0dcd7f2?auto=format&fit=crop&w=800&q=80" alt="Chocolate Cake">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1599785209707-22e1f1070db1?auto=format&fit=crop&w=800&q=80" alt="Vanilla Layer Cake">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1589307000255-fb9d86fc0b9c?auto=format&fit=crop&w=800&q=80" alt="Strawberry Cake with Toppings">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80" alt="Assorted Donuts">
+      </div>
+    </div>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 The Baker's Craft</p>
+  </footer>
+</body>
+</html>
 
-
-
-      
+  
